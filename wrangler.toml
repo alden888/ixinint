@@ -1,9 +1,0 @@
-# wrangler.toml
-name = "ixinint"
-compatibility_date = "2025-12-07"
-
-# 由于您部署的是静态网站，并且文件位于根目录
-# 部署 Pages 时，通常不需要指定 asset 路径，
-# 但如果 Wrangler 坚持要，我们应使用 Pages 部署的配置
-[pages_build_output]
-dir = "."
