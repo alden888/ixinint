@@ -1,0 +1,17 @@
+name = "ixinint-global"
+compatibility_date = "2025-12-07"
+compatibility_flags = ["nodejs_compat"]
+
+# 静态网站配置
+[assets]
+directory = "./"  # 指向根目录，因为您的文件都在根目录
+# 如果您的文件在public文件夹中，使用：directory = "./public"
+
+# 路由配置
+[route]
+pattern = "ixinint-global.pages.dev/*"
+zone_name = "ixinint-global.pages.dev"
+
+# 构建配置
+[build]
+command = "echo 'Static site - no build needed'"
