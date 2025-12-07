@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+
+Sitemap: https://ixinint-global.com/sitemap.xml
+Sitemap: https://ixinint-global.com/zh/sitemap.xml
+
+# Crawl delay for aggressive bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
