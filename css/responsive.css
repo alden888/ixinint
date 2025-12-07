@@ -1,0 +1,364 @@
+/* Mobile First - Base styles for mobile */
+@media (max-width: 767px) {
+    :root {
+        --container-padding: 1rem;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Header */
+    .header-content {
+        padding: 10px 0;
+    }
+    
+    .main-nav {
+        margin-left: 0;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        box-shadow: var(--shadow);
+        padding: 20px 0;
+        transform: translateY(-150%);
+        transition: var(--transition);
+        z-index: 999;
+    }
+    
+    .main-nav.active {
+        transform: translateY(0);
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .header-actions {
+        gap: 10px;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 120px 0 80px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .trust-indicators {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    /* Services */
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .service-title {
+        font-size: 1.25rem;
+    }
+    
+    /* CTA Section */
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    /* Footer */
+    .footer-content {
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .copyright {
+        order: 2;
+    }
+    
+    .footer-legal {
+        order: 1;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    /* Company Overview */
+    .company-info,
+    .company-image {
+        order: 1;
+    }
+    
+    .company-image {
+        text-align: center;
+    }
+    
+    /* Contact Section */
+    .contact-info,
+    .contact-form {
+        order: 1;
+    }
+    
+    .contact-form {
+        text-align: center;
+    }
+    
+    /* News Grid */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet - 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --container-padding: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2.25rem;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    /* Services */
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Advantage Grid */
+    .advantage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Product Categories */
+    .product-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Testimonials */
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact Section */
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info,
+    .contact-form {
+        order: 1;
+    }
+}
+
+/* Small Desktop - 1024px to 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    :root {
+        --container-padding: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 2.375rem;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 3.25rem;
+    }
+    
+    /* Services */
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Advantage Grid */
+    .advantage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Product Categories */
+    .product-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Screens - 1920px and above */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .cta-title {
+        font-size: 3rem;
+    }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero::before {
+        background-size: 200% 200%;
+    }
+    
+    .service-icon,
+    .advantage-icon {
+        transform: scale(1.05);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .service-card:hover,
+    .advantage-card:hover,
+    .category-card:hover,
+    .testimonial-card:hover {
+        transform: none !important;
+        box-shadow: var(--shadow) !important;
+    }
+    
+    .back-to-top:hover {
+        transform: none !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f172a;
+        color: #e2e8f0;
+    }
+    
+    .bg-light {
+        background-color: #1e293b;
+    }
+    
+    .bg-gradient {
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    }
+    
+    .service-card,
+    .advantage-card,
+    .category-card,
+    .testimonial-card,
+    .business-section,
+    .category-group,
+    .news-card,
+    .product-card {
+        background: #1e293b;
+        color: #e2e8f0;
+    }
+    
+    .service-description,
+    .advantage-description,
+    .category-description,
+    .testimonial-text,
+    .product-description,
+    .news-description {
+        color: #94a3b8;
+    }
+    
+    .section-title,
+    .service-title,
+    .advantage-title,
+    .category-title,
+    .news-title,
+    .product-title,
+    .contact-text h4,
+    .detail-item strong {
+        color: #f1f5f9;
+    }
+    
+    .footer {
+        background: #0f172a;
+    }
+    
+    .cookie-notice {
+        background: #1e293b;
+        color: #e2e8f0;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        background: #334155;
+        border-color: #475569;
+        color: #e2e8f0;
+    }
+    
+    .back-to-top {
+        background: #334155;
+    }
+    
+    .back-to-top:hover {
+        background: #475569;
+    }
+}
